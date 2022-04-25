@@ -1,0 +1,28 @@
+import dotenv from 'dotenv';
+
+dotenv.config();
+const {
+  POSTGRES_HOST,
+  POSTGRES_DB,
+  POSTGRES_TEST_DB,
+  POSTGRES_USER,
+  POSTGRES_PASSWORD,
+  ENV,
+  PORT,
+  BCRYPT_PASSWORD,
+  SALT_ROUNDS,
+  TOKEN_SECRET,
+} = process.env;
+
+export default {
+  ENV,
+  PORT,
+  POSTGRES_HOST,
+  POSTGRES_DB,
+  POSTGRES_TEST_DB,
+  POSTGRES_USER,
+  POSTGRES_PASSWORD,
+  BCRYPT_PASSWORD,
+  SALT_ROUNDS,
+  TOKEN_SECRET,
+};
