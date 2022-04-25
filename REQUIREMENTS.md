@@ -42,7 +42,7 @@
 
 #### Products
 
-[Products index by GET request](http://localhost:3000/api/products/login)
+[Products index by GET request](http://localhost:3000/api/products)
 
 [Show a product by id GET request](http://localhost:3000/api/products/show/:id)
 
