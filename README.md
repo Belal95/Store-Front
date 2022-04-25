@@ -9,7 +9,7 @@ Example .env
 ```
 PORT=3000
 DB_PORT=5432
-ENV=test
+ENV=dev
 POSTGRES_HOST=127.0.0.1
 POSTGRES_DB=store_dev
 POSTGRES_TEST_DB=store_test
