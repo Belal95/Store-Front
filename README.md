@@ -18,7 +18,6 @@ POSTGRES_PASSWORD=password123
 BCRYPT_PASSWORD=my_ultimate_salt_password
 SALT_ROUNDS=10
 TOKEN_SECRET=alcantara123!
-
 ```
 
 2. Create dev & test databases with name given in the `.env` file
@@ -31,14 +30,13 @@ TOKEN_SECRET=alcantara123!
 
 4. Run `db-migrate up` to run database migrations
 
-
 ---
 
 5. Run `yarn watch` to start the server on port 3000
 
 ---
 
-6. Run `yarn build && yarn test` to run the test suites
+6. Run `yarn test` to run the test suites
 
 ---
 
