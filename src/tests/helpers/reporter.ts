@@ -3,6 +3,7 @@ import {
   SpecReporter,
   StacktraceOption,
 } from 'jasmine-spec-reporter';
+import CustomReporter = jasmine.CustomReporter;
 import JasmineStartedInfo = jasmine.JasmineStartedInfo;
 
 class CustomProcessor extends DisplayProcessor {
@@ -18,5 +19,5 @@ jasmine.getEnv().addReporter(
       displayStacktrace: StacktraceOption.NONE,
     },
     customProcessors: [CustomProcessor],
-  })
+  }) as unknown as CustomReporter
 );
