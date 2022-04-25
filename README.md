@@ -29,11 +29,16 @@ TOKEN_SECRET=alcantara123!
 
 ---
 
-4. Run `yarn watch` to start the server on
+4. Run `db-migrate up` to run database migrations
+
 
 ---
 
-5. Run `yarn build && yarn test` to run the test suites
+5. Run `yarn watch` to start the server on port 3000
+
+---
+
+6. Run `yarn build && yarn test` to run the test suites
 
 ---
 
