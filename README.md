@@ -25,7 +25,7 @@ Example .env
 2. Create dev database, test databse & postgress user as follow
 
 - Using postgres root run the following queries
-  - use run `CREATE USER store_user WITH PASSWORD 'password123';` to creat the database user
+  - run `CREATE USER store_user WITH PASSWORD 'password123';` to creat the database user
   - run `CREATE DATABASE store_dev;` & `CREATE DATABASE store_test;` to create the dev & test databases
   - run `GRANT ALL PRIVILEGES ON DATABASE store_dev TO store_user` to give created user access to dev database
   - run `GRANT ALL PRIVILEGES ON DATABASE store_test TO store_user` to give created user access to test database
