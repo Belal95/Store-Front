@@ -6,21 +6,29 @@
 
 Example .env
 
-```
-PORT=3000
-DB_PORT=5432
-ENV=dev
-POSTGRES_HOST=127.0.0.1
-POSTGRES_DB=store_dev
-POSTGRES_TEST_DB=store_test
-POSTGRES_USER=store_user
-POSTGRES_PASSWORD=password123
-BCRYPT_PASSWORD=my_ultimate_salt_password
-SALT_ROUNDS=10
-TOKEN_SECRET=alcantara123!
-```
+    ```
+    PORT=3000
+    DB_PORT=5432
+    ENV=dev
+    POSTGRES_HOST=127.0.0.1
+    POSTGRES_DB=store_dev
+    POSTGRES_TEST_DB=store_test
+    POSTGRES_USER=store_user
+    POSTGRES_PASSWORD=password123
+    BCRYPT_PASSWORD=my_ultimate_salt_password
+    SALT_ROUNDS=10
+    TOKEN_SECRET=alcantara123!
+    ```
 
-2. Create dev & test databases with name given in the `.env` file
+---
+
+2. Create dev database, test databse & postgress user as follow
+
+- Using postgres root run the following queries
+  - use run `CREATE USER store_user WITH PASSWORD 'password123';` to creat the database user
+  - run `CREATE DATABASE store_dev;` & `CREATE DATABASE stor_test;` to create the dev & test databases
+  - run `GRANT ALL PRIVILEGES ON DATABASE store_dev TO store_user` to give created user access to dev database
+  - run `GRANT ALL PRIVILEGES ON DATABASE store_test TO store_user` to give created user access to test database
 
 ---
 
